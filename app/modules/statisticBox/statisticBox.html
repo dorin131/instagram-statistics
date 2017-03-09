@@ -1,0 +1,14 @@
+<div class="stats-box">
+  <div class="stats-title text-center" ng-click="ctrl.isSelected = !ctrl.isSelected">
+    {{ctrl.name}}
+    <span
+      class="glyphicon glyphicon-triangle-right pull-right"
+      ng-class="ctrl.isSelected ? 'glyphicon-triangle-bottom' : 'glyphicon-triangle-right'">
+    </span>
+  </div>
+  <div ng-if="ctrl.isSelected">
+    <ol>
+      <li ng-repeat="tag in ctrl.data">{{ctrl.prefix}}{{tag[0]}} ({{tag[1]}})</li>
+    </ol>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="manager-container content" ng-view ng-show="ctrl.pageLoaded">
+
+  <div class="user-details text-center">
+    <img ng-src="{{ctrl.userData.profile_picture}}" class="img-circle" />
+    <p><span>Username: </span>{{ctrl.userData.username}}</p>
+    <p><span>User ID: </span>{{ctrl.userData.id}}</p>
+    <p><span>Full name: </span>{{ctrl.userData.full_name}}</p>
+    <p><span>Bio: </span>{{ctrl.userData.bio || 'N/A'}}</p>
+    <p><span>Website: </span>{{ctrl.userData.website || 'N/A'}}</p>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-md-offset-3">
+    <statistic-box name="Top 10 used tags" data="ctrl.topUsedTags" prefix="#"></statistic-box>
+    <statistic-box name="Top 10 popular tags" data="ctrl.topPopularTags" prefix="#"></statistic-box>
+    <statistic-box name="Top 10 used filters" data="ctrl.topUsedFilters"></statistic-box>
+    <statistic-box name="Top 10 popular filters" data="ctrl.topPopularFilters"></statistic-box>
+  </div>
+
+</div>
+
+<div ng-show="!ctrl.pageLoaded" class="loader text-center">Loading...</div>
