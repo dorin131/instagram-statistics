@@ -1,4 +1,4 @@
-# instagram-manager
+# social-manager
 
 Live site: https://social-manager.herokuapp.com/
 
