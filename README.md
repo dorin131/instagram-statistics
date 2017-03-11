@@ -1,4 +1,4 @@
-# social-manager
+# instagram-statistics
 
 <p><img src="https://api.travis-ci.com/dorin131/instagram-manager.svg?token=cxHWxyZHsvmUyAjddvpq" /></p>
 
