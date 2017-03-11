@@ -8,15 +8,13 @@
 
 <strong>To run the app locally</strong>
 
-* `npm install`
-* Create a `.env` file in the root directory of your project
-```
-APP_ENV=development
+1. `npm install`
+2. Create a `.env` file in the root directory of your project
+<pre><code>APP_ENV=development
 CLIENT_ID=...
-SECRET=...
-  ```
-* `npm start`
-* `gulp && gulp watch`
-* Open in your browser `http://127.0.0.1:3000`
+SECRET=...</code></pre>
+3. `npm start`
+4. `gulp && gulp watch`
+5. Open in your browser `http://127.0.0.1:3000`
 
 <p>This project is licensed under the terms of the MIT license.</p>
